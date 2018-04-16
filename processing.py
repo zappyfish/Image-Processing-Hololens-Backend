@@ -67,16 +67,6 @@ class ImageProcessingManager:
             color = self.label(lab, c)
             colorsWithPosition.append([cX, cY, color])
 
-            c = c.astype("float")
-            c *= ratio
-            c = c.astype("int")
-            text = color
-            cv2.drawContours(image, [c], -1, (0, 255, 0), 2)
-            cv2.putText(image, text, (cX, cY), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
-
-            cv2.imshow("Image", image)
-            cv2.waitKey(0)
-
         return colorsWithPosition
 
     def base64ToImage(self, base64_string):
