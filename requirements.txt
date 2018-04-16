@@ -1,0 +1,7 @@
+opencv_python==3.4.0.12
+scipy==1.0.1
+imutils==0.4.6
+Flask==0.12.2
+numpy==1.14.2
+gunicorn==19.7.1
+Pillow==5.1.0
